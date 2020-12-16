@@ -1,0 +1,24 @@
+Leaf's Nord Alt Dispensor:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "Themcsource****">
+<html>
+<head>
+<p style="font-size:40px">
+<title>Leaf's Alts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="text/javascript">
+var msgArr = new Array();
+msgArr[0] = "galdor709@gmail.com:Bungo709 - Expiration Date: 2023-03-03";
+msgArr[1] = "goku9456@gmail.com:Pokemon9! - Expiration Date: 2020-12-05";
+msgArr[2] = "garmorgan1999@gmail.com:Gm#200287 - Expiration Date: 2021-10-19";
+
+window.onload = function () {
+document.getElementById("msgDiv").innerHTML = msgArr[Math.floor(Math.random()*msgArr.length)];
+}
+</script>
+</head>
+
+<body>
+<div id="msgDiv"></div>
+</body>
+</html></HTML>
