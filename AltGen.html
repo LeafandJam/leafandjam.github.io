@@ -33,32 +33,87 @@ a:active {
 <title>Leaf's Alts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<script type="text/javascript">
-var msgArr = new Array();
-msgArr[0] = "Z2FsZG9yNzA5QGdtYWlsLmNvbTpCdW5nbzcwOSAtIEV4cGlyYXRpb24gRGF0ZTogMjAyMy0wMy0wMw==";
-msgArr[1] = "Z29rdTk0NTZAZ21haWwuY29tOlBva2Vtb245ISAtIEV4cGlyYXRpb24gRGF0ZTogMjAyMC0xMi0wNQ==";
-msgArr[2] = "Z2FybW9yZ2FuMTk5OUBnbWFpbC5jb206R20jMjAwMjg3IC0gRXhwaXJhdGlvbiBEYXRlOiAyMDIxLTEwLTE5";
-msgArr[3] = "ZGFubnljbGVtZW50MTAwQHlhaG9vLmNvbTpCbGFja3NoYWRvdzEwMDEgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMTEtMTc=";
-msgArr[4] = "ZGhydXZwYXJla2gxOUBnbWFpbC5jb206ZGhydXYxOVQgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDQtMDI=";
-msgArr[5] = "ZG9uYWRvZG9uYTI1QGdtYWlsLmNvbTpUYmlsaXNpOTIgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDMtMjg=";
-msgArr[6] = "ZGV1Y2UxMTk2QG1lLmNvbTpEb3VibGVkZXVjZTIgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDUtMjQ=";
-msgArr[7] = "ZGVzaXJlMjY3QGhvdG1haWwuY29tOmNvcnJlY3QyNjcgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDctMDQ=";
-msgArr[8] = "ZGF2ZXBlZWJzQGhvdG1haWwuY29tOkxvc2VyZmlzaDEgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDctMDU=";
-msgArr[9] = "cGFuZ2hhbUBnbWFpbC5jb206cmVibWU5ODczMjEgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDktMDM=";
-msgArr[10] = "bmp0dC4wMjI0QGdtYWlsLmNvbTptbjE5NDg1MyAtIEV4cGlyYXRpb24gRGF0ZTogMjAyMS0xMC0yMg==";
-msgArr[11] = "cmF5bWluZ3h1QGdtYWlsLmNvbTp4dTU0cnVpbWluZyAtIEV4cGlyYXRpb24gRGF0ZTogMjAyMS0wMS0wOQ==";
-msgArr[12] = "bmF0aGFuZXR1bGx5QGdtYWlsLmNvbTpEMDBkMDAxODM1IC0gRXhwaXJhdGlvbiBEYXRlOiAyMDIxLTAxLTA5";
-msgArr[13] = "cGFpdHluZ2FyZ2FubzVAZ21haWwuY29tOmlsb3ZlYW5nZWwgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDUtMDE=";
-window.onload = function () {
-document.getElementById("msgDiv").innerHTML = msgArr[Math.floor(Math.random()*msgArr.length)];
-}
+<script>
 
-</script>
+  var alts = Array(
+  "cGFpdHluZ2FyZ2FubzVAZ21haWwuY29tOmlsb3ZlYW5nZWwgLSBFeHBpcmF0aW9uIERhdGU6IDIwMjEtMDUtMDE=",
+  "ZXdpZWhlQGdtYWlsLmNvbTpCb29ib28yMA==",
+  "Zi5ib2htMjcxMkBnbWFpbC5jb206U2FpZ29ua28x",
+  "ZHlsYW53ZWVyQGdtYWlsLmNvbTpza3lyaW0xMjM=",
+  "ZXRzODI5MTFAZ21haWwuY29tOmU2MzYxNTAwcw==",
+  "ZWZveGZvcmRAeWFob28uY29tOkphbmV0MTIzNA==",
+  "ZWxpemFiZXRoam9obnN0b240QGdtYWlsLmNvbToxRWRvbWludXM=",
+  "ZWxpbWlsZW5hOTJAZ21haWwuY29tOkRlbmlzZXJlZ2luYTky",
+  "ZWxsbWNjYXJ0aHlAaG90bWFpbC5jby51azpoYXJ0bGFuZDE=",
+  "ZWR3YXJkc204NkBnbWFpbC5jb206cHJlbWVkODY=",
+  "ZnJvc3R5d2FnbmVyQGdtYWlsLmNvbTpXYWduZXI1NDAw",
+  "Z2FicmllbHRoZWF3ZXNvbWUxMDFAZ21haWwuY29tOiNCZWx1Z2ExMDE=",
+  "Z2FnZWdhbWJsZUBnbWFpbC5jb206SGVybzE5ODch",
+  "ZHdheW5lLmEuYWJib3R0QGdtYWlsLmNvbTpEd2F5bmUxMjM=",
+  "ZXJpbmxldmVuc29uQGdtYWlsLmNvbTpkYW5jZXIyMQ==",
+  "ZmF3YWRzaGFoQGFvbC5jb206bHV2c2FtYW4=",
+  "ZHVhbmVwYXVsMjMwMUB5YWhvby5jb206I1NlbmhhMTk3Nw==",
+  "ZXg1MGV4cHJvQGhvdG1haWwuY2E6UGVyZWRhcnVrMQ==",
+  "Z2FtYmxlbWlhbWlAZ21haWwuY29tOm1hY2kyNjk4",
+  "ZWxpbmF4b3h4QGdtYWlsLmNvbTpidWJibGVzODg4",
+  "ZXJpY3Nod2FydHpAYW9sLmNvbTp0aGVtYW4yMg==",
+  "ZHVhcnRlMTk3NW51bm9AZ21haWwuY29tOm51ZHVhcnRlMTQ=",
+  "ZnJlZGVyaWMubG91cmVuY29AbnVtZXJpY2FibGUuY29tOk1hcmdhdXg3ODU1MTMy",
+  "ZW5naW4ua2FyYW1hbkBob3RtYWlsLmNvbTprYXJhbWFuOTQ=",
+  "ZHlsbGFuMzVAZ21haWwuY29tOndoaXRuZXkxNTE=",
+  "ZWpyaWVmZW5iZXJnQGdtYWlsLmNvbTpUaW5rM3JiMzEx",
+  "Z2FtZXRpZ2VybGFrZUBnbWFpbC5jb206dGlnZXJtb24yMQ==",
+  "ZnJhbmRtY0Bob3RtYWlsLmNvbTpDaGVzd2ljay4=",
+  "Z2FyeWxjbmdAZ21haWwuY29tOjAya2Vsbmds",
+  "ZmVyZ3VzLm1jaXZvckBnbWFpbC5jb206TXVzdGFuZ3A1MQ==",
+  "Z2FncmVzdGExQGxpdmUuY29tOkd1aXNlcHBlMjcxNQ==",
+  "Z2FyaW5zd2Fuc29uQGdtYWlsLmNvbTo1MzI1OTFnYQ==",
+  "Z2FtaW5nc3R5bGVzMTU5QGdtYWlsLmNvbTpMb2xib3k0NTU=",
+  "Z2FtZXJjdWJlZXllc0BnbWFpbC5jb206Z3JlbmFkZTM=",
+  "ZW1yZXhpc0BnbWFpbC5jb206MTEwNUVyaXM=",
+  "ZmluaXAubGluZHF2aXN0QGdtYWlsLmNvbTprb21ibzEwMA==",
+  "ZWxsaW90ZGF2aXMxQHlhaG9vLmNvLnVrOkJpZ2NoYWlyMQ==",
+  "ZmF5YmllbjEyMEBnbWFpbC5jb206Q2FyZWwxMjM0NQ==",
+  "Z2FyZjI3NkBnbWFpbC5jb206dmljdG9yMjE2MQ==",
+  "ZnJlZGVyaWsuc29sYm9AbWUuY29tOkZyZWR5OHN0cmlrZXI=",
+  "Z2VvcmdlbWExNDBAZ21haWwuY29tOjI1MjEyYzkyQg==",
+  "Z2FybGluNTU2QGdtYWlsLmNvbTpNYXNvY2hpc3Q4",
+  "Z2FtZTEyMzRAZ21haWwuY29tOmdhbWUxMjM0",
+  "Z2F1cmF2YS5zYWhpQGdtYWlsLmNvbTpQYSQkd29yZDE=",
+  "Z2FsZG9yNzA5QGdtYWlsLmNvbTpCdW5nbzcwOQ==",
+  "Z29rdTk0NTZAZ21haWwuY29tOlBva2Vtb245IQ==",
+  "Z2FybW9yZ2FuMTk5OUBnbWFpbC5jb206R20jMjAwMjg3",
+  "ZGFtaWVuaGVyY2VAbGl2ZS5mcjphbGljaWE3Mg==",
+  "ZmFkaWthdGVyQGdtYWlsLmNvbTpwYWxpOTA5MA==",
+
+
+
+    );
+  
+  function token() {
+    var token = alts[Math.floor(Math.random() * alts.length)];
+    document.getElementById('token').value = token;
+  }
+  
+  function myFunction() {
+    var copyText = document.getElementById("token");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied!");
+  }
+  
+  </script>
 </head>
 
 <body>
-
-To stop bots from taking accounts, they are encoded.<br> Copy the token below and paste it in <a href="https://www.base64decode.org/">here!</a> </br>
+  <p style="font-size: 25px">Generate and copy your token.</p>
+  <div>
+    <button type="token" onclick="token()">Generate Token</button>
+    <input name="token" id="token">
+    <button onclick="myFunction()">Copy Token</button>
+  </div>
+  <p style="font-size:25px"> Paste your token <a href="https://www.base64decode.org/">here!</a> </p>
 <div id="msgDiv"></div>
 </body>
 </HTML>
